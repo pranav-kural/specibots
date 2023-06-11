@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SpeciBots
+
+Booking chat sessions with specialized chatbots fine-tuned for conversations that require the most accurate results most efficiently.
 
 ## Getting Started
 

@@ -1,6 +1,7 @@
 import RobotPic from "../_components/RobotPic";
 import NavBar from "../_components/NavBar";
 import { Baumans } from "next/font/google";
+import HowItWorks from "../_components/HowItWorks";
 
 const baumans = Baumans({
   subsets: ["latin"],
@@ -43,11 +44,12 @@ export default function About() {
             className="my-3 fs-4 text-decoration-underline"
             style={{ color: "#0143CB" }}
           >
-            <b>Try it now</b>
+            <a href="/">
+              <b>Try it now</b>
+            </a>
           </span>
-          <span className="my-3 fs-5">
-            To learn more check{" "}
-            <b className="text-decoration-underline">How it works?</b>
+          <span className="my-3 fs-6">
+            To learn more check <HowItWorks />
           </span>
         </div>
         <div className="col d-flex justify-content-end align-items-center">

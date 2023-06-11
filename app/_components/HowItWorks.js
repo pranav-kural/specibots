@@ -1,3 +1,6 @@
+"use client";
+import { useEffect } from "react";
+
 import Image from "next/image";
 import { Baumans } from "next/font/google";
 
@@ -8,6 +11,10 @@ const baumans = Baumans({
 });
 
 export default function HowItWorks() {
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
+
   return (
     <div>
       <a href="#" data-bs-toggle="modal" data-bs-target="#how-it-works-modal">
