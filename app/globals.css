@@ -196,3 +196,22 @@ body {
   background-color: #ba1a1a;
   min-width: 45%;
 }
+
+#how-it-works-modal-dialog {
+  color: #5f6a83;
+  background: -moz-linear-gradient(
+      180deg,
+      #fbf8fd 0%,
+      rgba(251, 248, 253, 0) 100%
+    ),
+    #f3efef;
+  background: -webkit-linear-gradient(
+      180deg,
+      #fbf8fd 0%,
+      rgba(251, 248, 253, 0) 100%
+    ),
+    #f3efef;
+  background: linear-gradient(180deg, #fbf8fd 0%, rgba(251, 248, 253, 0) 100%),
+    #f3efef;
+  border-radius: 25px;
+}

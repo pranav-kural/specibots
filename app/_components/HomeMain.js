@@ -1,10 +1,13 @@
 import BookingForm from "./BookingForm";
+import HowItWorks from "./HowItWorks";
 
 export default function HomeMain() {
   return (
     <div className="container-sm d-flex flex-column justify-content-start align-items-center">
       <div className="row"></div>
-      <p className="text-decoration-underline mb-3">How it works?</p>
+      <div className="mb-3">
+        <HowItWorks />
+      </div>
       <p className="fs-4 fw-bolder text-uppercase mb-3">Get Started</p>
       <div
         id="home-main-form-container"
