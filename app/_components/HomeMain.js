@@ -4,7 +4,6 @@ import HowItWorks from "./HowItWorks";
 export default function HomeMain() {
   return (
     <div className="container-sm d-flex flex-column justify-content-start align-items-center">
-      <div className="row"></div>
       <div className="mb-3">
         <HowItWorks />
       </div>

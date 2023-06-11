@@ -97,6 +97,18 @@ export default function BookingForm() {
             </div>
           </div>
 
+          <div className="mt-3 w-100 d-flex flex-column justify-content-center align-items-start">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="enter email address here"
+              required
+            />
+          </div>
+
           <div className="w-100 d-flex justify-content-between align-items-center">
             <button
               id="booking-btn"
@@ -113,13 +125,16 @@ export default function BookingForm() {
               Reset
             </button>
           </div>
+          <div className="mt-3 w-100 d-flex justify-content-center align-items-center">
+            <span className="text-muted">flat rate $1 per minute</span>
+          </div>
         </form>
       ) : (
         // else
         <div className="container-fluid d-flex flex-column justify-content-center align-items-center">
           <h1 className="fs-2 border-l mb-4">Congratulations! 🎉</h1>
           <p>
-            Your session has been booked.Details for accessing the session has
+            Your session has been booked. Details for accessing the session has
             been sent to your email.
           </p>
         </div>
