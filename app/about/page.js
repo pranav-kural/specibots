@@ -36,7 +36,7 @@ export default function About() {
             fine-tuned to provide most accurate results for conversations that
             relate to a specific topic.
           </span>
-          <span className="my-3 fs-5">
+          <span className="my-2 fs-5">
             Get more actionable and insightful responses <b>faster</b> without
             compromising speed or accuracy.
           </span>
@@ -50,6 +50,11 @@ export default function About() {
           </span>
           <span className="my-3 fs-6">
             To learn more check <HowItWorks />
+          </span>
+          <span className="my-3 fs-6">
+            <b>Important:</b> We take data privacy very seriously. Rest assured
+            your data including any chat sessions are not stored or shared with
+            anyone.
           </span>
         </div>
         <div className="col d-flex justify-content-end align-items-center">
