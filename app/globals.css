@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --normal-font-style: "Montserrat", Helvetica, sans-serif;
   --text-color-primary: "#5F6A83";
+  --booking-btn-color: "#6D4CA8";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +17,6 @@
 }
 
 body {
-  font-family: var(--normal-font-style);
   width: 100%;
   min-width: 100vw;
   height: 100%;
@@ -25,7 +24,7 @@ body {
   left: 0px;
   top: 0px;
 
-  color: var(--text-color-primary);
+  color: #5f6a83;
 
   background-color: rgb(255, 218, 214);
   background: -moz-linear-gradient(
@@ -46,9 +45,154 @@ body {
     rgba(228, 226, 230, 1) 35%,
     rgba(220, 226, 236, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffdad6",endColorstr="#dce2ec",GradientType=1);
 }
 
 .logo {
-  color: var(--text-color-primary);
+  color: #5f6a83;
+  font-size: 1.5em;
+}
+
+.navbar {
+  font-size: 1.2em;
+}
+
+.nav-link {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+#home-header-container {
+  position: relative;
+}
+
+#home-header {
+  max-width: 40%;
+  margin-left: 1.5em;
+  font-size: 3em;
+  line-height: 75px;
+
+  /* apple_gradien */
+
+  background: linear-gradient(
+    138.69deg,
+    #c92a2a 12.81%,
+    #ba1a1a 26.31%,
+    #bc2d2d 38.69%,
+    #403ea8 58.39%,
+    #1f1d90 66.83%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.robot-pic-container {
+  width: fit-content;
+  position: relative;
+  right: -25px;
+  overflow: hidden;
+}
+
+.robot-pic {
+  z-index: -1;
+  position: relative;
+}
+
+.robot-pic-fade-from-right {
+  z-index: 1;
+  background: -moz-linear-gradient(
+    270deg,
+    rgba(228, 227, 231, 0) 95.84%,
+    #e4e3e7 100%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    rgba(228, 227, 231, 0) 95.84%,
+    #e4e3e7 100%
+  );
+  background: linear-gradient(
+    270deg,
+    rgba(228, 227, 231, 0) 95.84%,
+    #e4e3e7 100%
+  );
+}
+
+.robot-pic-fade-from-top {
+  z-index: 3;
+  background: -moz-linear-gradient(
+    to top,
+    rgba(242, 228, 227, 0) 96.35%,
+    #f2e4e3 100%
+  );
+  background: -webkit-linear-gradient(
+    to top,
+    rgba(242, 228, 227, 0) 96.35%,
+    #f2e4e3 100%
+  );
+  background: linear-gradient(
+    to top,
+    rgba(242, 228, 227, 0) 96.35%,
+    #f2e4e3 100%
+  );
+}
+
+.robot-pic-fade-from-bottom {
+  z-index: 2;
+  background: -moz-linear-gradient(
+    to bottom,
+    rgba(228, 227, 232, 0) 73.44%,
+    rgba(228, 227, 232, 0.302326) 84.38%,
+    #e4e3e7 92.19%
+  );
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(228, 227, 232, 0) 73.44%,
+    rgba(228, 227, 232, 0.302326) 84.38%,
+    #e4e3e7 92.19%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(228, 227, 232, 0) 73.44%,
+    rgba(228, 227, 232, 0.302326) 84.38%,
+    #e4e3e7 92.19%
+  );
+}
+
+#home-main-form-container {
+  max-width: 50vw;
+  min-width: 40vw;
+  min-height: 40vh;
+  width: fit-content;
+  padding: 2em;
+
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(176, 163, 161, 0.1775) 0%,
+    rgba(219, 217, 221, 0.25) 41.15%,
+    rgba(218, 199, 197, 0.25) 80.73%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(176, 163, 161, 0.1775) 0%,
+    rgba(219, 217, 221, 0.25) 41.15%,
+    rgba(218, 199, 197, 0.25) 80.73%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(176, 163, 161, 0.1775) 0%,
+    rgba(219, 217, 221, 0.25) 41.15%,
+    rgba(218, 199, 197, 0.25) 80.73%
+  );
+
+  border-radius: 50px;
+}
+
+#booking-btn {
+  background-color: #6d4ca8;
+  min-width: 45%;
+}
+
+#reset-btn {
+  background-color: #ba1a1a;
+  min-width: 45%;
 }
