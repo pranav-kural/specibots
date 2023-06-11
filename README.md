@@ -26,3 +26,4 @@ To learn more about Next.js, take a look at the following resources:
 
 ![view](https://github.com/pranav-kural/specibots/assets/17651852/3ae33e9e-e723-428c-9fc9-66338d04ea7c)
 
+![view (1)](https://github.com/pranav-kural/specibots/assets/17651852/13ef6c49-105b-4811-b605-48f9c7fee53a)
