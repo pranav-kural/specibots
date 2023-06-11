@@ -1,18 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function BookingForm() {
   const [bookingSubmitted, setBookingSubmitted] = useState(false);
 
   async function handleSubmit() {
     setBookingSubmitted(true);
+    console.log("BookingForm.js handleSubmit()");
   }
 
   return (
     <div className="container-fluid d-flex flex-column justify-content-center align-items-center">
       {!bookingSubmitted ? ( // if bookingSubmitted is true}
-        <form action={handleSubmit}>
+        <form>
           <div className="d-flex flex-column me-3">
             <label htmlFor="category-select" className="form-label">
               Category
@@ -101,6 +102,7 @@ export default function BookingForm() {
             <button
               id="booking-btn"
               type="submit"
+              onClick={() => setBookingSubmitted(true)}
               className="btn btn-primary mt-3"
             >
               Book
